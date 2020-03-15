@@ -1,0 +1,2 @@
+# StudentsMLHackaton
+Predict students behaviour
