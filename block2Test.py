@@ -47,8 +47,8 @@ CLFmodel = joblib.load("modelFinal.pkl")
 #model predicts a possible solution [0 - 1]
 prediction = CLFmodel.predict(results)
 #get accuracy [0 - 1] -> [0.0 ... 1.0]
-churn_prob = CLFmodel.predict_proba(results)
+accuracy = CLFmodel.predict_proba(results)
 #print [0.0 ... 1.0]
-submission_contaract_field = churn_prob[:,1]
+submission_contaract_field = accuracy[:,1]
 for i in submission_contaract_field:
   print(i)
